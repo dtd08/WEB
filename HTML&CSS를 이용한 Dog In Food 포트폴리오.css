@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Jaro:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Do+Hyeon&family=Dongle&family=Freeman&family=Jaro:opsz@6..72&family=Poor+Story&display=swap');
+
+* {
+  font-family: "Poor Story", "Jaro", sans-serif;
+  border-radius: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  padding-top: 76px;
+}
+
+header {
+  width: 1000x;
+  height: 300px;
+  background: url("Imgs/DogsInFood/강아지_음식_합성대회_대문사진.jpg");
+  margin: auto;
+  border-radius: 0;
+}
+
+h1 {
+  width: 400px;
+  text-align: center;
+  margin: auto;
+  line-height: 300px;
+}
+
+div {
+  width: 100%;
+}
+
+span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #e67a32;
+}
+
+h1>span {
+  background-color: #d3a716;
+  color: white;
+  font-size: 40px;
+}
+
+nav {
+  position: fixed;
+  background-color: #9dce3c;
+  opacity: 0.8;
+  width: 2000px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+}
+
+.home {
+  display: inline;
+  width: 200px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.home>a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px 20px;
+  color: brown;
+}
+
+.home>a:hover {
+  box-shadow: #7F7C21 1px 1px, #7F7C21 2px 2px, #7F7C21 3px 3px, #7F7C21 4px 4px, #7F7C21 5px 5px, #7F7C21 6px 6px;
+  transition: all 0.25s ease;
+}
+
+.menu {
+  height: 60px;
+  width: 600px;
+  margin-left: 35.5em;
+}
+
+.menu>ul {
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.menu>ul>li {
+  font-weight: bold;
+  text-align: center;
+  list-style: none;
+  float: left;
+  margin-left: 15px;
+}
+
+.menu>ul>li>a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  padding: 15px 25px;
+  line-height: 50px;
+  color: white;
+}
+
+.menu>ul>li>a:hover {
+  background-color: #FFF842;
+  color: black;
+  font-weight: bold;
+  transition: all 0.2s ease;
+
+  box-shadow: #7F7C21 1px 1px, #7F7C21 2px 2px, #7F7C21 3px 3px, #7F7C21 4px 4px, #7F7C21 5px 5px, #7F7C21 6px 6px;
+  transition: all 0.25s ease;
+}
+
+section {
+  padding-top: 85px;
+  width: 900px;
+}
+
+.container {
+  border: 3px solid goldenrod;
+  margin-left: 25em;
+}
+
+h2 {
+  clear: both;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  background-color: #fdf0a2;
+  text-align: center;
+  width: 500px;
+  font-size: 25px;
+}
+
+hr {
+  width: 550px;
+}
+
+.intro,
+.quali, .startDate {
+  text-align: center;
+  font-size: 20px;
+}
+
+.mst {
+  width: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: #daa5203f;
+  padding: 30px 0;
+}
+
+.mst>img {
+  width: 300px;
+  display: block;
+  margin: auto;
+  border: 3px solid goldenrod;
+}
+
+label {
+  display: block;
+  width: 300px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: auto;
+  margin-bottom: 3px;
+  padding: 10px;
+  text-align: center;
+  color: #ffdb11;
+  background-color: olivedrab;
+}
+
+.donate {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+}
+
+.donate>a>img {
+  width: 60px;
+  z-index: 1;
+}
+
+/* footer 영역 스타일 */
+/* 위에 section의 div가 relative로 되어있어서 footer의 div도 마찬가지로 relative로 조정해줌 */
+.source {
+  position: relative;
+  margin: auto;
+  top: 50px;
+  width: 100%;
+  height: 50px;
+  font-size: 12px;
+  line-height: 25px;
+  border-radius: 2px;
+  background-color: olivedrab;
+  /* 제일 아래로 깔아서 가려지는게 없도록 설정 */
+  z-index: -1;
+}
+
+.source>p {
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
+  color: #beaeae;
+  font-weight: bold;
+}
+
+.priceDetails {
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  width: 500px;
+  height: 200px;
+  font-size: 18px;
+}
+
+.priceDetails,
+tr,
+th,
+td {
+  border: 2px solid olive;
+  border-collapse: collapse;
+}
+
+.priceDetails th {
+  background-color: #d0e183;
+}
+
+.priceDetails td {
+  background-color: #fafee9;
+}
+
+.price>p {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: blue;
+}
+
+.director,
+.managersInfo {
+  text-align: center;
+}
+
+#insta {
+  text-decoration: none;
+  color: brown;
+}
+
+#managers ul {
+  list-style: none;
+  font-weight: bold;
+  margin-left: -30px;
+}
+
+.managersInfo>ul>li {
+  display: inline;
+  padding: 5px 20px;
+}
+
+.managersInfo>ul>li:hover {
+  background-color: #f1c777;
+}
+
+.oficial {
+  text-align: center;
+}
+
+.oficial li {
+  padding: 10px;
+  border: 1px solid orange;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.oficial a {
+  text-decoration: none;
+  color: brown;
+}
+
+.oficial li:hover {
+  border: none;
+  background-color: #f1c777;
+}
