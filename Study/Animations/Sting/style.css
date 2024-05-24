@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: crimson;
+    margin: 100px auto;
+    /* 처음에 보여질 box의 모양과 색상을 잡아준다 */
+    border-radius: 50%;
+    /* 모든 외곽선 속성을 한꺼번에 정하는 것 */
+    outline: 1px solid transparent;
+    animation: quaqa 2s 1s infinite alternate;
+    /* 위와 같이 쓰면 애니메이션 속성을 한꺼번에 설정할 수 있음
+        quaqa = 이름
+        2s = 진행시간
+        1s = 딜레이 (2초가 끝난 뒤 1초 후 진행)
+        infinite = 무한반복
+        alternate = 애니메이션 연결을 똑바로 진행하고 리버스도 시켜주게 됨
+    */
+}
+
+@-webkit-keyframes quaqa {
+    0% {
+        border-radius: 20% 30% 20% 0;
+        width: 50px;
+        height: 50px;
+        background-color: darkred;
+    }
+
+    30% {
+        border-radius: 0 30% 40% 30%;
+        width: 100px;
+        height: 100px;
+        background-color: coral;
+    }
+
+    60% {
+        border-radius: 40% 0 40% 50%;
+        width: 150px;
+        height: 150px;
+        background-color: pink;
+    }
+
+    100% {
+        border-radius: 50% 50% 0 50%;
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+    }
+
+    /* 
+        0%에 나타날 에니메이션 30% 60% ~ 나타날 애니메이션을 쭉 쓰면 안에 쓴 기능들이 자연스럽게 이어짐
+    */
+}
