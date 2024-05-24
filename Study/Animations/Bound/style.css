@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    margin: 0px 2px;
+    border-radius: 50%;
+    float: left;
+    opacity: 0.2;
+    width: 50px;
+    height: 50px;
+    outline: 1px solid transparent;
+    background-color: crimson;
+
+    animation: sss 1s 0s infinite ease-in-out alternate;
+}
+
+.box:nth-child(2) {
+    animation-delay: 0.2s;
+    background-color: cadetblue;
+}
+
+
+.box:nth-child(3) {
+    animation-delay: 0.3s;
+    background-color: deeppink;
+}
+
+
+.box:nth-child(4) {
+    animation-delay: 0.4s;
+    background-color: dodgerblue;
+}
+
+
+.box:nth-child(5) {
+    animation-delay: 0.5s;
+    background-color: gold;
+}
+
+.box:hover {
+    /* 마우스 올리면 정지 */
+    animation-play-state: paused;
+}
+
+@-webkit-keyframes sss {
+    0% {
+        margin: 0px 2px;
+    }
+
+    70% {
+        margin: 200px 2px;
+        opacity: 0.7;
+    }
+
+    100% {
+        margin: 180px 2px;
+        opacity: 1;
+    }
+}
