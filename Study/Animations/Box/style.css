@@ -1,0 +1,32 @@
+div {
+    position: absolute;
+    left: 100px;
+    width: 100px;
+    height: 50px;
+    margin-left: -50px;
+    background-color: #000;
+    color: #fff;
+
+    /* animation name */
+    animation-name: quaqa;
+    /* 한 번 재생하는데 걸리는 시간 */
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    /* 반복 횟수 제한 없음 */
+    animation-iteration-count: infinite;
+    /* 이동했다가 처음으로 돌아옴 */
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+/* 키프레임 이름 = 애니메이션 이름 */
+/* webkit을 쓰면 노란줄이 뜨기도 함(되는게 있고 안되는게 있음) */
+@-webkit-keyframes quaqa {
+    0% {
+        left: 100px;
+    }
+
+    100% {
+        left: 300px;
+    }
+}
