@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 10px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            color: #fff;
+            background-color: red;
+            animation: home 5s linear infinite alternate running;
+        }
+
+        .box:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes home {
+            0% {
+                background-color: red;
+                transform: translate(0, 0) scale(0.3, 0.3) rotate(0deg);
+            }
+
+            10% {
+                background-color: orange;
+            }
+
+            20% {
+                background-color: yellow;
+            }
+
+            30% {
+                background-color: green;
+            }
+
+            40%{
+                background-color: blue;
+                transform: translate(150px, 20px) scale(1, 1) rotate(180deg);
+            }
+
+            70% {
+                background-color: navy;
+                transform: translate(50px, 70px) scale(0.7, 0.7) rotate(270deg);
+            }
+
+            100% {
+                background-color: red;
+                transform: translate(0, 0) scale(0.3, 0.3) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">animation</div>
+</body>
+</html>
